@@ -1,0 +1,66 @@
+{
+  "type": "object",
+  "required": [
+    "page",
+    "per_page",
+    "total",
+    "total_pages",
+    "data"
+  ],
+  "properties": {
+    "page": {
+      "type": "integer"
+    },
+    "per_page": {
+      "type": "integer"
+    },
+    "total": {
+      "type": "integer"
+    },
+    "total_pages": {
+      "type": "integer"
+    },
+    "data": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "email",
+          "first_name",
+          "last_name",
+          "avatar"
+        ],
+        "properties": {
+          "id": {
+            "type": "integer",
+            "enum": [
+              7,
+              8,
+              9,
+              10,
+              11,
+              12
+            ]
+          },
+          "email": {
+            "type": "string",
+            "pattern": "^(.*)@reqres.in$"
+          },
+          "first_name": {
+            "type": "string",
+            "pattern": "^(.*)$"
+          },
+          "last_name": {
+            "type": "string",
+            "pattern": "^(.*)$"
+          },
+          "avatar": {
+            "type": "string",
+            "pattern": "https://s3.amazonaws.com/uifaces/faces/twitter/[^\/]+/128.jpg"
+          }
+        }
+      }
+    }
+  }
+}
