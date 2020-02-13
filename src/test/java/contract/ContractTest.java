@@ -20,6 +20,6 @@ public class ContractTest {
                 .then()
                 .log()
                 .body()
-                .body(matchesJsonSchemaInClasspath("schema.json"));
+                .body(matchesJsonSchemaInClasspath("usersResponseSchema.json"));
     }
 }
