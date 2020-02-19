@@ -13,7 +13,7 @@ import static org.hamcrest.Matchers.equalTo;
 
 public class BodyToAllureTest {
     RequestSpecification requestSpec = new RequestSpecBuilder()
-            .setBaseUri("https://reqres.in/")
+            .setBaseUri("https://reqres.in")
             .setContentType(ContentType.JSON)
             .setBasePath("/api/users")
             .build();
