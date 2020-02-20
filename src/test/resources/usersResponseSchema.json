@@ -48,7 +48,7 @@
             "pattern": "^(.*)@reqres.in$"
           },
           "first_name": {
-            "type": "string",
+            "type": ["string","null"],
             "pattern": "^(.*)$"
           },
           "last_name": {
