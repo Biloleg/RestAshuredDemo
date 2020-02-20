@@ -26,7 +26,7 @@ public class RestAssuredThread extends Thread {
     public void run() {
         System.out.println("start thread " + threadNumber);
         ValidatableResponse response = given()
-                .baseUri("https://reqres.in/")
+                .baseUri("https://reqres.in")
                 .contentType(ContentType.JSON)
                 .basePath("/api/users")
                 .param("page", 2)

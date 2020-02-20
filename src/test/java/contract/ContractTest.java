@@ -11,7 +11,7 @@ public class ContractTest {
     @Test
     public void restGet() {
         given()
-                .baseUri("https://reqres.in/")
+                .baseUri("https://reqres.in")
                 .contentType(ContentType.JSON)
                 .basePath("/api/users")
                 .param("page", 2)

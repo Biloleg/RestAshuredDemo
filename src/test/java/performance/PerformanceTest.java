@@ -12,9 +12,9 @@ public class PerformanceTest {
 
     @Test
     public void performanceTest() throws InterruptedException {
-        int threadNumbers = 100;
+        int threadNumber = 100;
         List<Thread> threads = new ArrayList<>();
-        for (int i = 0; i < threadNumbers; i++) {
+        for (int i = 0; i < threadNumber; i++) {
             RestAssuredThread request = new RestAssuredThread(i);
             Thread thread = new Thread(request);
             thread.start();
